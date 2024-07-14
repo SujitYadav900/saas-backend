@@ -1,0 +1,559 @@
+2021-10-23 01:18:33.641  WARN 22056 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-10-23 01:18:34.169  INFO 22056 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$38fa235] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:18:34.341  INFO 22056 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost/configserver
+2021-10-23 01:18:35.446  INFO 22056 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost/configserver
+2021-10-23 01:18:36.616  INFO 22056 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost/configserver
+2021-10-23 01:18:37.867  INFO 22056 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost/configserver
+2021-10-23 01:18:39.241  INFO 22056 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost/configserver
+2021-10-23 01:18:40.757  INFO 22056 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost/configserver
+2021-10-23 01:18:40.843 ERROR 22056 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing: None of labels [] found
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:147) ~[spring-cloud-config-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52) ~[spring-cloud-context-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:162) ~[spring-cloud-config-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator$$FastClassBySpringCGLIB$$fa44b2a.invoke(<generated>) ~[spring-cloud-config-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:91) ~[spring-retry-1.2.5.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287) ~[spring-retry-1.2.5.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:164) ~[spring-retry-1.2.5.RELEASE.jar:na]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:118) ~[spring-retry-1.2.5.RELEASE.jar:na]
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:153) ~[spring-retry-1.2.5.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator$$EnhancerBySpringCGLIB$$da62ebdb.locateCollection(<generated>) ~[spring-cloud-config-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:101) ~[spring-cloud-context-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at com.whatsappbuisness.wsbuissness.WsbuissnessApplication.main(WsbuissnessApplication.java:22) ~[classes/:na]
+
+2021-10-23 01:18:53.883  WARN 22165 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-10-23 01:18:54.454  INFO 22165 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$7072cf81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:18:54.606  INFO 22165 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://173.212.247.177/configserver
+2021-10-23 01:18:55.273  INFO 22165 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=whatsappofficial-service, profiles=[default], label=null, version=null, state=null
+2021-10-23 01:18:55.275  INFO 22165 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/shared/whatsappofficial-service.yml'}, BootstrapPropertySource {name='bootstrapProperties-classpath:/shared/application.yml'}]
+2021-10-23 01:18:55.335  INFO 22165 --- [main] c.w.wsbuissness.WsbuissnessApplication   : No active profile set, falling back to default profiles: default
+2021-10-23 01:18:56.176  WARN 22165 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'oauth2ClientContext' defined in class path resource [org/springframework/boot/autoconfigure/security/oauth2/client/OAuth2RestOperationsConfiguration$SingletonScopedConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2RestOperationsConfiguration$SingletonScopedConfiguration; factoryMethodName=oauth2ClientContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/oauth2/client/OAuth2RestOperationsConfiguration$SingletonScopedConfiguration.class]] for bean 'oauth2ClientContext': There is already [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in org.springframework.security.oauth2.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientContextConfiguration] bound.
+2021-10-23 01:18:56.190  INFO 22165 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-23 01:18:56.193 ERROR 22165 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'oauth2ClientContext', defined in class path resource [org/springframework/boot/autoconfigure/security/oauth2/client/OAuth2RestOperationsConfiguration$SingletonScopedConfiguration.class], could not be registered. A bean with that name has already been defined in BeanDefinition defined in org.springframework.security.oauth2.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientContextConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2021-10-23 01:20:03.323  INFO 22295 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$571f2efd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:20:03.584  INFO 22295 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://173.212.247.177/configserver
+2021-10-23 01:20:04.735  INFO 22295 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=whatsappofficial-service, profiles=[default], label=null, version=null, state=null
+2021-10-23 01:20:04.739  INFO 22295 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/shared/whatsappofficial-service.yml'}, BootstrapPropertySource {name='bootstrapProperties-classpath:/shared/application.yml'}]
+2021-10-23 01:20:04.824  INFO 22295 --- [main] c.w.wsbuissness.WsbuissnessApplication   : No active profile set, falling back to default profiles: default
+2021-10-23 01:20:05.728  INFO 22295 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-23 01:20:05.728  INFO 22295 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-23 01:20:05.786  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.ApiService.TokenServiceWs.TokenRepo. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-10-23 01:20:05.812  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Messages.Crud.MessageRepo. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-10-23 01:20:05.814  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.RabbitMqQue.MongoQue.Conversation.ConversationRepo. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-10-23 01:20:05.817  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Subscription.SubscriptionFeature.SubscriptionFeatureRepo. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-10-23 01:20:05.821  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Template.TemplateRepo. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-10-23 01:20:05.861  INFO 22295 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127ms. Found 12 JPA repository interfaces.
+2021-10-23 01:20:05.868  INFO 22295 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-23 01:20:05.868  INFO 22295 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-10-23 01:20:05.882  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Campaing.CampaingServiceRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.882  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Features.DirectChatFeature.ChatThread.ChatThreadRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.883  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Features.DirectChatFeature.UserAsignDao.UserAssignRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.883  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Features.FeatureRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.883  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.MediaDb.MediaDbRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.884  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.MessageReportDao.MessageReportRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.885  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.RefundDao.RefundRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.886  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Subscription.SubscriptionFeature.SubscriptionFeaturePermission.SubsciptionFeaturePermissionRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.886  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Subscription.SubscriptionFeature.SubscriptionFeatureRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.886  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Subscription.SubscriptionRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.887  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.TokenService.TokenRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.888  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.TokenStore.TokenStoreRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.888  INFO 22295 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.WebhookDao.WebhookRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:20:05.898  INFO 22295 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 4 MongoDB repository interfaces.
+2021-10-23 01:20:06.073  WARN 22295 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-10-23 01:20:06.192  INFO 22295 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=21ed8a8d-3b91-365b-8692-6942400acd50
+2021-10-23 01:20:06.329  INFO 22295 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:20:06.363  INFO 22295 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:20:06.366  INFO 22295 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:20:06.370  INFO 22295 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@756b2d90' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:20:06.374  INFO 22295 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:20:06.377  INFO 22295 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:20:06.585  INFO 22295 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2021-10-23 01:20:06.592  INFO 22295 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-23 01:20:06.593  INFO 22295 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2021-10-23 01:20:06.723  INFO 22295 --- [main] o.a.c.c.C.[.[.[/wabuissness/v1]          : Initializing Spring embedded WebApplicationContext
+2021-10-23 01:20:06.724  INFO 22295 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1880 ms
+2021-10-23 01:20:06.820  WARN 22295 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-10-23 01:20:06.820  INFO 22295 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-23 01:20:06.825  INFO 22295 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@23c7cb18
+2021-10-23 01:20:07.305  INFO 22295 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-10-23 01:20:07.306  INFO 22295 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2021-10-23 01:20:07.342  INFO 22295 --- [cluster-ClusterId{value='617315ef8f849d061be02dec', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:11}] to localhost:27017
+2021-10-23 01:20:07.346  INFO 22295 --- [cluster-ClusterId{value='617315ef8f849d061be02dec', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 11]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2666943}
+2021-10-23 01:20:07.347  INFO 22295 --- [cluster-ClusterId{value='617315ef8f849d061be02dec', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2021-10-23 01:20:07.573  WARN 22295 --- [main] .m.c.i.MongoPersistentEntityIndexCreator : Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2021-10-23 01:20:07.595  INFO 22295 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:12}] to localhost:27017
+2021-10-23 01:20:08.032  INFO 22295 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-23 01:20:08.086  INFO 22295 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2021-10-23 01:20:08.161  INFO 22295 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-10-23 01:20:08.251  INFO 22295 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-23 01:20:08.517  INFO 22295 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-23 01:20:08.534  INFO 22295 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-23 01:20:08.756  WARN 22295 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.whatsappbuisness.wsbuissness.CombinePackadge.Subscription.SubscriptionFeature.SubscriptionFeaturePermission.SubcriptionFeaturePermissionComponsite
+2021-10-23 01:20:08.757  WARN 22295 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.whatsappbuisness.wsbuissness.CombinePackadge.Subscription.SubscriptionFeature.SubscriptionFeaturePermission.SubcriptionFeaturePermissionComponsite
+2021-10-23 01:20:08.757  WARN 22295 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.whatsappbuisness.wsbuissness.CombinePackadge.Features.DirectChatFeature.UserAsignDao.UserCompositeKeyDao
+2021-10-23 01:20:08.757  WARN 22295 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.whatsappbuisness.wsbuissness.CombinePackadge.Features.DirectChatFeature.UserAsignDao.UserCompositeKeyDao
+2021-10-23 01:20:09.429  INFO 22295 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-23 01:20:09.434  INFO 22295 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-23 01:20:10.154  INFO 22295 --- [main] c.w.w.C.S.SubscriptionServiceImpl        : Will Update Subscription locally
+2021-10-23 01:20:10.208  WARN 22295 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-23 01:20:10.326  WARN 22295 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-10-23 01:20:10.327  INFO 22295 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-23 01:20:10.550  INFO 22295 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-23 01:20:10.950  INFO 22295 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1f026960-1948-4a18-ae92-e62fbba41569
+
+2021-10-23 01:20:11.124  INFO 22295 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5eb974, org.springframework.security.web.context.SecurityContextPersistenceFilter@77198cce, org.springframework.security.web.header.HeaderWriterFilter@6d3b59e2, org.springframework.security.web.authentication.logout.LogoutFilter@1313dea8, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7c068c7b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@383c94ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1026a011, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72f112d1, org.springframework.security.web.session.SessionManagementFilter@76480730, org.springframework.security.web.access.ExceptionTranslationFilter@40f40221, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a58d05d]
+2021-10-23 01:20:11.135  INFO 22295 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4dd31687, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e83badc, org.springframework.security.web.header.HeaderWriterFilter@162ccd19, org.springframework.security.web.csrf.CsrfFilter@522db06e, org.springframework.security.web.authentication.logout.LogoutFilter@7e8e111d, org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter@78d72c9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53eb4dae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23df16cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22d82fe8, org.springframework.security.web.session.SessionManagementFilter@674f22ce, org.springframework.security.web.access.ExceptionTranslationFilter@4be8c1bb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5dcbdcb9]
+2021-10-23 01:20:11.227  WARN 22295 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-23 01:20:11.303  INFO 22295 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-10-23 01:20:11.467  INFO 22295 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-10-23 01:20:11.517  INFO 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-10-23 01:20:11.572  INFO 22295 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-10-23 01:20:11.572  INFO 22295 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-10-23 01:20:11.756  INFO 22295 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-10-23 01:20:11.756  INFO 22295 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-10-23 01:20:12.106  INFO 22295 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-10-23 01:20:12.128  INFO 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-10-23 01:20:12.128  INFO 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-10-23 01:20:12.128  INFO 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-10-23 01:20:12.128  INFO 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-10-23 01:20:12.128  INFO 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-10-23 01:20:12.128  INFO 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-10-23 01:20:12.128  INFO 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-10-23 01:20:12.188  WARN 22295 --- [main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 404; retrying on another server if available
+2021-10-23 01:20:12.191 ERROR 22295 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_WHATSAPPOFFICIAL-SERVICE/192.168.0.30:whatsappofficial-service:8083 - was unable to refresh its cache! status = Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1069) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:983) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:430) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:276) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:272) ~[eureka-client-1.9.13.jar:1.9.13]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:67) ~[spring-cloud-netflix-eureka-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:324) ~[spring-cloud-netflix-eureka-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:359) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389) ~[spring-cloud-context-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186) ~[spring-cloud-context-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:356) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:129) ~[spring-cloud-netflix-eureka-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:117) ~[spring-cloud-netflix-eureka-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:499) ~[spring-cloud-context-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$2f3fd44c.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:57) ~[spring-cloud-netflix-eureka-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38) ~[spring-cloud-netflix-eureka-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83) ~[spring-cloud-netflix-eureka-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:894) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at com.whatsappbuisness.wsbuissness.WsbuissnessApplication.main(WsbuissnessApplication.java:22) ~[classes/:na]
+
+2021-10-23 01:20:12.192  WARN 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2021-10-23 01:20:12.198  INFO 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-10-23 01:20:12.202  INFO 22295 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-10-23 01:20:12.217  INFO 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1634932212213 with initial instances count: 0
+2021-10-23 01:20:12.223  INFO 22295 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application WHATSAPPOFFICIAL-SERVICE with eureka with status UP
+2021-10-23 01:20:12.224  INFO 22295 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1634932212223, current=UP, previous=STARTING]
+2021-10-23 01:20:12.225  INFO 22295 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_WHATSAPPOFFICIAL-SERVICE/192.168.0.30:whatsappofficial-service:8083: registering service...
+2021-10-23 01:20:12.226  INFO 22295 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2021-10-23 01:20:12.251  INFO 22295 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_WHATSAPPOFFICIAL-SERVICE/192.168.0.30:whatsappofficial-service:8083 - registration status: 404
+2021-10-23 01:20:12.253  INFO 22295 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#59baf2c7:0/SimpleConnection@20c3be4c [delegate=amqp://guest@127.0.0.1:5672/, localPort= 37540]
+2021-10-23 01:20:12.258  INFO 22295 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (CreditManagment_Que) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-10-23 01:20:12.258  INFO 22295 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (Contact_Que_Api) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-10-23 01:20:12.258  INFO 22295 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (Contact_Que) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-10-23 01:20:12.258  INFO 22295 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (DLR_Que) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-10-23 01:20:12.258  INFO 22295 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (Main_Que) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-10-23 01:20:12.258  INFO 22295 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (Mongo_Que) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-10-23 01:20:12.258  INFO 22295 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (NodejsEvent_Que) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-10-23 01:20:12.258  INFO 22295 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (Webhook_Que) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-10-23 01:20:12.258  INFO 22295 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (SendWs_QUE_API) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-10-23 01:20:12.259  INFO 22295 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (SendWs_QUE) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-10-23 01:20:12.486  INFO 22295 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path '/wabuissness/v1'
+2021-10-23 01:20:12.487  INFO 22295 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2021-10-23 01:20:12.490  INFO 22295 --- [main] c.w.wsbuissness.WsbuissnessApplication   : Started WsbuissnessApplication in 10.241 seconds (JVM running for 11.161)
+2021-10-23 01:20:13.078  INFO 22295 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/wabuissness/v1]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-23 01:20:13.078  INFO 22295 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-23 01:20:13.086  INFO 22295 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-10-23 01:20:13.102  INFO 22295 --- [RMI TCP Connection(4)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://173.212.247.177/configserver
+2021-10-23 01:20:13.543  INFO 22295 --- [RMI TCP Connection(4)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=whatsappofficial-service, profiles=[default], label=null, version=null, state=null
+2021-10-23 01:20:19.373  INFO 22295 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application WHATSAPPOFFICIAL-SERVICE with eureka with status DOWN
+2021-10-23 01:20:19.374  WARN 22295 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1634932219374, current=DOWN, previous=UP]
+2021-10-23 01:20:19.375  INFO 22295 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_WHATSAPPOFFICIAL-SERVICE/192.168.0.30:whatsappofficial-service:8083: registering service...
+2021-10-23 01:20:19.379  INFO 22295 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_WHATSAPPOFFICIAL-SERVICE/192.168.0.30:whatsappofficial-service:8083 - registration status: 404
+2021-10-23 01:20:19.388  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-10-23 01:20:20.341  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-10-23 01:20:20.344  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-10-23 01:20:20.349  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-10-23 01:20:20.352  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-10-23 01:20:20.366  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-10-23 01:20:20.368  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-10-23 01:20:20.378  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-10-23 01:20:20.379  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-10-23 01:20:20.395  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-10-23 01:20:20.401  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-10-23 01:20:20.403  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-10-23 01:20:20.404  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-10-23 01:20:20.407  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-10-23 01:20:20.410  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-10-23 01:20:20.435  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-10-23 01:20:20.442  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2021-10-23 01:20:20.443  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2021-10-23 01:20:20.444  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2021-10-23 01:20:20.445  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2021-10-23 01:20:20.445  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2021-10-23 01:20:20.445  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2021-10-23 01:20:20.445  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2021-10-23 01:20:20.446  INFO 22295 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2021-10-23 01:20:20.448  INFO 22295 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-23 01:20:20.465  INFO 22295 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-23 01:20:20.477  INFO 22295 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:12}] to localhost:27017 because the pool has been closed.
+2021-10-23 01:20:20.500  INFO 22295 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-10-23 01:20:23.502  INFO 22295 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-10-23 01:20:23.517  INFO 22295 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_WHATSAPPOFFICIAL-SERVICE/192.168.0.30:whatsappofficial-service:8083 - deregister  status: 405
+2021-10-23 01:20:23.737  INFO 22295 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2021-10-23 01:20:23.738  INFO 22295 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-23 01:20:23.749  INFO 22295 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-10-23 01:23:50.515  WARN 22801 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-10-23 01:23:51.082  INFO 22801 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$1e1dcf40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:23:51.426  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://173.212.247.177/configserver
+2021-10-23 01:23:51.691  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://173.212.247.177/configserver. Will be trying the next url if available
+2021-10-23 01:23:52.710  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://173.212.247.177/configserver
+2021-10-23 01:23:52.898  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://173.212.247.177/configserver. Will be trying the next url if available
+2021-10-23 01:23:54.016  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://173.212.247.177/configserver
+2021-10-23 01:23:54.203  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://173.212.247.177/configserver. Will be trying the next url if available
+2021-10-23 01:23:55.428  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://173.212.247.177/configserver
+2021-10-23 01:23:55.599  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://173.212.247.177/configserver. Will be trying the next url if available
+2021-10-23 01:23:56.941  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://173.212.247.177/configserver
+2021-10-23 01:23:57.121  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://173.212.247.177/configserver. Will be trying the next url if available
+2021-10-23 01:23:58.593  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://173.212.247.177/configserver
+2021-10-23 01:23:58.763  INFO 22801 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://173.212.247.177/configserver. Will be trying the next url if available
+2021-10-23 01:23:58.834 ERROR 22801 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:147) ~[spring-cloud-config-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52) ~[spring-cloud-context-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:162) ~[spring-cloud-config-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator$$FastClassBySpringCGLIB$$fa44b2a.invoke(<generated>) ~[spring-cloud-config-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:91) ~[spring-retry-1.2.5.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287) ~[spring-retry-1.2.5.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:164) ~[spring-retry-1.2.5.RELEASE.jar:na]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:118) ~[spring-retry-1.2.5.RELEASE.jar:na]
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:153) ~[spring-retry-1.2.5.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator$$EnhancerBySpringCGLIB$$e3d30dea.locateCollection(<generated>) ~[spring-cloud-config-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:101) ~[spring-cloud-context-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at com.whatsappbuisness.wsbuissness.WsbuissnessApplication.main(WsbuissnessApplication.java:22) ~[classes/:na]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://173.212.247.177/configserver/whatsappofficial-service/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:586) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:264) ~[spring-cloud-config-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:106) ~[spring-cloud-config-client-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	... 23 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1261) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1194) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1082) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1016) ~[na:na]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 27 common frames omitted
+
+2021-10-23 01:58:38.118  WARN 25719 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-10-23 01:58:38.536  INFO 25719 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$c89117af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:58:38.817  INFO 25719 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://173.212.247.177/configserver
+2021-10-23 01:58:39.497  INFO 25719 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=whatsappofficial-service, profiles=[default], label=null, version=null, state=null
+2021-10-23 01:58:39.505  INFO 25719 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/shared/whatsappofficial-service.yml'}, BootstrapPropertySource {name='bootstrapProperties-classpath:/shared/application.yml'}]
+2021-10-23 01:58:39.558  INFO 25719 --- [main] c.w.wsbuissness.WsbuissnessApplication   : No active profile set, falling back to default profiles: default
+2021-10-23 01:58:40.546  INFO 25719 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-23 01:58:40.547  INFO 25719 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-23 01:58:40.586  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.ApiService.TokenServiceWs.TokenRepo. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-10-23 01:58:40.609  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Messages.Crud.MessageRepo. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-10-23 01:58:40.611  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.RabbitMqQue.MongoQue.Conversation.ConversationRepo. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-10-23 01:58:40.616  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Subscription.SubscriptionFeature.SubscriptionFeatureRepo. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-10-23 01:58:40.619  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Template.TemplateRepo. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-10-23 01:58:40.663  INFO 25719 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110ms. Found 12 JPA repository interfaces.
+2021-10-23 01:58:40.670  INFO 25719 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-23 01:58:40.670  INFO 25719 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-10-23 01:58:40.682  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Campaing.CampaingServiceRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.683  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Features.DirectChatFeature.ChatThread.ChatThreadRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.683  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Features.DirectChatFeature.UserAsignDao.UserAssignRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.684  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Features.FeatureRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.685  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.MediaDb.MediaDbRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.685  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.MessageReportDao.MessageReportRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.687  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.RefundDao.RefundRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.687  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Subscription.SubscriptionFeature.SubscriptionFeaturePermission.SubsciptionFeaturePermissionRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.687  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Subscription.SubscriptionFeature.SubscriptionFeatureRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.688  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.Subscription.SubscriptionRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.689  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.TokenService.TokenRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.689  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.TokenStore.TokenStoreRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.689  INFO 25719 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.whatsappbuisness.wsbuissness.CombinePackadge.WebhookDao.WebhookRepo. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-23 01:58:40.699  INFO 25719 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 4 MongoDB repository interfaces.
+2021-10-23 01:58:40.871  WARN 25719 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-10-23 01:58:40.999  INFO 25719 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=21ed8a8d-3b91-365b-8692-6942400acd50
+2021-10-23 01:58:41.138  INFO 25719 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:58:41.171  INFO 25719 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:58:41.175  INFO 25719 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:58:41.179  INFO 25719 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@21edd891' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:58:41.184  INFO 25719 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:58:41.187  INFO 25719 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-23 01:58:41.394  INFO 25719 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-10-23 01:58:41.401  INFO 25719 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-23 01:58:41.401  INFO 25719 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2021-10-23 01:58:41.544  INFO 25719 --- [main] o.a.c.c.C.[.[.[/wabuissness/v1]          : Initializing Spring embedded WebApplicationContext
+2021-10-23 01:58:41.544  INFO 25719 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1964 ms
+2021-10-23 01:58:41.636  WARN 25719 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-10-23 01:58:41.636  INFO 25719 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-23 01:58:41.641  INFO 25719 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1805383
+2021-10-23 01:58:42.071  INFO 25719 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-10-23 01:58:42.071  INFO 25719 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2021-10-23 01:58:42.108  INFO 25719 --- [cluster-ClusterId{value='61731efacbd3fa5e598b8b73', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:13}] to localhost:27017
+2021-10-23 01:58:42.112  INFO 25719 --- [cluster-ClusterId{value='61731efacbd3fa5e598b8b73', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 11]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2878461}
+2021-10-23 01:58:42.113  INFO 25719 --- [cluster-ClusterId{value='61731efacbd3fa5e598b8b73', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2021-10-23 01:58:42.327  WARN 25719 --- [main] .m.c.i.MongoPersistentEntityIndexCreator : Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2021-10-23 01:58:42.354  INFO 25719 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14}] to localhost:27017
+2021-10-23 01:58:42.808  INFO 25719 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-23 01:58:42.850  INFO 25719 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2021-10-23 01:58:42.921  INFO 25719 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-10-23 01:58:42.988  INFO 25719 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-23 01:58:44.406 ERROR 25719 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLException: null,  message from server: "Host '203.81.242.200' is not allowed to connect to this MySQL server"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.HikariDataSource$$FastClassBySpringCGLIB$$eeb1ae86.invoke(<generated>) ~[HikariCP-3.4.2.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:136) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$4206f926.getConnection(<generated>) ~[HikariCP-3.4.2.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at com.whatsappbuisness.wsbuissness.WsbuissnessApplication.main(WsbuissnessApplication.java:22) ~[classes/:na]
+
+2021-10-23 01:58:44.411  WARN 25719 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : null,  message from server: "Host '203.81.242.200' is not allowed to connect to this MySQL server"
+2021-10-23 01:58:44.420  WARN 25719 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2021-10-23 01:58:44.431  INFO 25719 --- [main] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:14}] to localhost:27017 because the pool has been closed.
+2021-10-23 01:58:44.458  INFO 25719 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-10-23 01:58:44.501  INFO 25719 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-23 01:58:44.506 ERROR 25719 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at com.whatsappbuisness.wsbuissness.WsbuissnessApplication.main(WsbuissnessApplication.java:22) ~[classes/:na]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	... 33 common frames omitted
+

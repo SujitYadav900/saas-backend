@@ -1,0 +1,6 @@
+package com.whatsappbuisness.wsbuissness.CombinePackadge.Common;
+
+public enum VoucherType {
+
+    Recharge,Recharge_Return,Debits,Debit_SessionMessage,Debit_TemplateMessage,Debit_TemplateCreation,Debit_Subscription_Renew,Refund_Templates,RefundSessions,Debit_Campaigns_Templates,Debit_Campaigns_Sessions,Debit_Instance_Creation,Debit_Usr_Session,Debit_Bsns_Session,Debit_Marketing_Session,Debit_Utility_Session,Debit_Authentication_Session
+}

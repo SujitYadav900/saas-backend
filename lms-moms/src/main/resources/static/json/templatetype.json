@@ -1,0 +1,106 @@
+[
+  {
+    "templateType": "Lead",
+    "variable": [
+
+      {
+        "name": "parentName",
+        "status": 1
+      },
+      {
+        "name": "childName",
+        "status": 1
+      },
+      {
+        "name": "phonenumber",
+        "status": 1
+      },
+      {
+        "name": "email",
+        "status": 1
+      },
+      {
+        "name": "state",
+        "status": 1
+      },
+      {
+        "name": "city",
+        "status": 1
+      },
+      {
+        "name": "product",
+        "status": 1
+      }
+    ,
+      {
+        "name": "url",
+        "status": 1
+      }
+    ,
+      {
+        "name": "appointmentDate",
+        "status": 1
+      }
+    ,
+      {
+        "name": "mbopschildid",
+        "status": 1
+      },
+      {
+        "name": "centrename",
+        "status": 1
+      },{
+        "name": "centrehead",
+        "status": 1
+      }
+    ],
+    "status": 1,
+    "source": [
+      {
+        "name": "Leadstatus",
+        "status": 1
+      },
+      {
+        "name": "Leadtype",
+        "status": 1
+      },
+      {
+        "name": "Leadsource",
+        "status": 1
+      },
+      {
+        "name": "Leadproduct",
+        "status": 1
+      }
+    ]
+  },
+  {
+    "templateType": "User",
+    "variable": [
+      {
+        "name": "Fullname",
+        "status": 1
+      },
+      {
+        "name": "Phonenumber",
+        "status": 1
+      },
+      {
+        "name": "Email",
+        "status": 1
+      }
+    ,
+      {
+        "name": "URL",
+        "status": 1
+      }
+    ],
+    "status": 1,
+    "source": [
+      {
+        "name": "Team",
+        "status": 1
+      }
+    ]
+  }
+]

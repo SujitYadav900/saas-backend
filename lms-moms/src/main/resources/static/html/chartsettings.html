@@ -1,0 +1,67 @@
+<div class="modal fade" id="graphSettings" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-header-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3><i class="fa fa-pie-chart m-r-5"></i> Chart View</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-horizontal" id="createForm">
+                            <fieldset>
+
+
+                                <!-- Text input-->
+                                <div class="col-md-8 form-group">
+                                    <label class="control-label">Chart View</label>
+                                    <br>
+                                    <button class="btn btn-success chartWidthBtn" chartWidth="full" type="button"><i class="fa fa-align-justify"></i> Full</button>
+                                    <button class="btn btn-success chartWidthBtn" chartWidth="half" type="button"><i class="fa fa-th-large"></i> Half</button>
+                                    <hr>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-8 form-group">
+                                    <label class="control-label">Chart Type</label>
+                                    <br>
+                                    <button class="btn btn-success btn-lg chartTypeBtn" chartType="bar" type="button" style="width: 300px; margin-bottom: 5px;"><i class="fa fa-bar-chart"></i> Bar Chart</button>
+                                    <button class="btn btn-success btn-lg chartTypeBtn" chartType="pie" type="button" style="width: 300px; margin-bottom: 5px;"><i class="fa fa-pie-chart"></i> Pie Chart</button>
+                                    <br>
+                                    <button class="btn btn-success btn-lg chartTypeBtn" chartType="line" type="button" style="width: 300px; margin-bottom: 5px;"><i class="fa fa-line-chart"></i> Line Chart</button>
+                                    <button class="btn btn-success btn-lg chartTypeBtn" chartType="doughnut" type="button" style="width: 300px; margin-bottom: 5px;"><i class="fa fa-circle-o-notch"></i> Doughnut Chart</button>
+                                    <hr>
+                                </div>
+
+                                <div class="col-md-6 form-group">
+                                    <label class="control-label">Render</label>
+                                    <select  class="form-control" id="datarender">
+                                        <option value="value">Value</option>
+                                        <option value="percentage">Percentage</option>
+                                        <option value="label">Label</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="col-md-6 form-group">
+                                    <label class="control-label">Position</label>
+                                    <select  class="form-control" id="position">
+                                        <option value="default">Inside</option>
+                                        <option value="outside">Outside</option>
+                                    </select>
+                                </div>
+
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger pull-right" id="formCloseBtn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>

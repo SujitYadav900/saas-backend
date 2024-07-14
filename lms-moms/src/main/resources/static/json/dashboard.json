@@ -1,0 +1,94 @@
+[
+  {
+    "dashboardName" : "Lead Count",
+    "url" : "leadcount",
+    "description" : "This will show total leads / total convert leads and average conversion time"
+},
+  {
+  "dashboardName" : "My Lead Count",
+  "url" : "agentleadcount",
+  "description" : "This will show total leads / total convert leads and total pending leads of an agent"
+},
+  {
+    "dashboardName" : "Lead Stage",
+    "url" : "leadstagegraph",
+    "description" : "This will show graph for leads stage wise"
+  },
+  {
+    "dashboardName" : "Lead Status",
+    "url" : "leadstatusgraph",
+    "description" : "This will show graph for leads status wise"
+  },
+  {
+    "dashboardName" : "Lead Type",
+    "url" : "leadtypegraph",
+    "description" : "This will show graph for leads type wise"
+  },
+  {
+    "dashboardName" : "Lead Product",
+    "url" : "leadproductgraph",
+    "description" : "This will show graph for leads product wise"
+  },
+  {
+    "dashboardName" : "Lead Source",
+    "url" : "leadsourcegraph",
+    "description" : "This will show graph for leads source wise"
+  },
+  {
+    "dashboardName" : "Lead Source Inner",
+    "url" : "leadsourceinnergraph",
+    "description" : "This will show graph for leads source inner wise"
+  },
+
+  {
+    "dashboardName" : "Ticket Count",
+    "url" : "totalticket",
+    "description" : "This will show Total Tickets/ Total Close Tickets and average ticket closing time"
+  },
+  {
+    "dashboardName" : "Ticket Status",
+    "url" : "ticketstatusgraph",
+    "description" : "This will show graph for Tickets status wise"
+  },
+  {
+    "dashboardName" : "Ticket Priority",
+    "url" : "ticketprioritygraph",
+    "description" : "This will show graph for Tickets priority wise"
+  },
+  {
+    "dashboardName" : "Ticket Type",
+    "url" : "tickettypegraph",
+    "description" : "This will show graph for Tickets type wise"
+  },
+  {
+    "dashboardName" : "Mail Count",
+    "url" : "totalmail",
+    "description" : "Status wise count for mails"
+  },
+  {
+    "dashboardName" : "Mail Status Graph",
+    "url" : "mailstatusgraph",
+    "description" : "This will show graph for Mail status wise"
+  }
+,
+  {
+    "dashboardName" : "Tasks",
+    "url" : "taskview",
+    "description" : "Current , Pending and Upcoming Tasks"
+  }
+,
+  {
+    "dashboardName" : "Facebook Campaign",
+    "url" : "leadprioritygraph",
+    "description" : "This will show graph for Leads Facebook campaign wise"
+  }
+,
+  {
+    "dashboardName" : "Facebook Keyword",
+    "url" : "keywordgraph",
+    "description" : "This will show graph for Leads Facebook keyword wise"
+  }
+
+
+
+]

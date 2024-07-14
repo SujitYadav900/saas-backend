@@ -1,0 +1,664 @@
+{
+  "id":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Lead ID",
+    "placeholder":"Lead ID",
+    "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  },
+  "counter":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Lead Counter",
+    "placeholder":"Lead Counter"
+  , "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  },
+  "c2cAttempts":{
+    "type":"text",
+    "options":[],
+    "fieldName":"c2cAttempts",
+    "placeholder":"c2cAttempts"
+  , "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  },
+
+  "parentName":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Parent/Guardian Name",
+    "placeholder":"Enter Parent/Guardian Name",
+    "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "phonenumber":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Contact Number",
+    "placeholder":"Enter Contact Number"
+  , "required":true
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "mbopsChildId":{
+    "type":"text",
+    "options":[],
+    "fieldName":"MBOPS Child ID",
+    "placeholder":"MBOPS Child ID"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":true
+  },
+  "mbopsChildEnrollId":{
+    "type":"text",
+    "options":[],
+    "fieldName":"MBOPS Child Enroll ID",
+    "placeholder":"MBOPS Child Enroll ID"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":true
+  },
+  "assessmentNotes":{
+    "type":"textarea",
+    "options":[],
+    "fieldName":"Assessment Notes",
+    "placeholder":"Assessment Notes"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "adFormData":{
+    "type":"textarea",
+    "options":[],
+    "fieldName":"Ad Form Data",
+    "placeholder":"Ad Form Data"
+  , "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  },
+  "leadScore":{
+    "type":"number",
+    "options":[],
+    "fieldName":"Lead Score",
+    "placeholder":"Lead Score"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "relation":{
+    "type":"radio",
+    "options":["<label class='radio-inline'><input onclick type='radio' class='showorhideother' name='relation' value='Father'>Father</label>","<label class='radio-inline'><input type='radio' class='showorhideother' name='relation' value='Mother'>Mother</label>","<label class='radio-inline'><input type='radio' class='showorhideother' name='relation' value='NA'>Other <customfield id='relation_field'></customfield></label>"],
+    "fieldName":"Relation with child",
+    "placeholder":"Enter Relation with Child",
+    "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "childName":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Child Name",
+    "placeholder":"Enter Child Name"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "gender":{
+    "type":"select",
+    "options":["<option value=''>--- Select Geneder ---</option>","<option value='Male'>Male</option>","<option value='Female'>Female</option>"],
+    "fieldName":"Gender",
+    "placeholder":"Enter Gender"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "dob":{
+    "type":"date",
+    "options":[],
+    "fieldName":"Date Of Birth",
+    "placeholder":"Enter Date Of Birth"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "childLanguage":{
+    "type":"radio",
+    "options":["<label class='radio-inline'><input onclick type='radio' class='showorhideother' name='childLanguage' value='English'>English</label>","<label class='radio-inline'><input type='radio' class='showorhideother' name='childLanguage' value='Hindi'>Hindi</label>","<label class='radio-inline'><input type='radio' class='showorhideother' name='childLanguage' value='NA'>Other <customfield id='childLanguage_field'></customfield></label>"],
+    "fieldName":"Primary Language of the Child",
+    "placeholder":"Enter Child's Primary Language"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+
+
+  "typeSchool":{
+  "type":"text",
+  "options":[],
+  "fieldName":"Alternate Contact Number",
+  "placeholder":"Alternate Contact Number"
+, "required":false
+,"visible":true,
+  "size":"full","disabled":false
+}
+,
+
+  "email":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Email",
+    "placeholder":"Enter Email"
+  , "required":true
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "city":{
+    "type":"text",
+    "options":[],
+    "fieldName":"City",
+    "placeholder":"Enter city"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "countryId":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Country",
+    "placeholder":"Enter Country"
+  , "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  }
+,
+  "state":{
+    "type":"text",
+    "options":[],
+    "fieldName":"State",
+    "placeholder":"Enter State"
+  , "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  },
+  "country":{
+    "type":"select",
+    "options":[],
+    "fieldName":"Country",
+    "placeholder":"Select Country"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  }
+,
+  "stateId":{
+    "type":"select",
+    "options":[],
+    "fieldName":"State",
+    "placeholder":"Select State"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "address":{
+    "type":"textarea",
+    "options":[],
+    "fieldName":"Address",
+    "placeholder":"Enter Address"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "pincode":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Pincode",
+    "placeholder":"Enter Pincode"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "parentLanguage":{
+    "type":"radio",
+    "options":["<label class='radio-inline'><input onclick type='radio' class='showorhideother' name='parentLanguage' value='English'>English</label>","<label class='radio-inline'><input type='radio' class='showorhideother' name='parentLanguage' value='Hindi'>Hindi</label>","<label class='radio-inline'><input type='radio' class='showorhideother' name='parentLanguage' value='NA'>Other <customfield id='parentLanguage_field'></customfield></label>"],
+    "fieldName":"Primary Language of the Parent/Guardian",
+    "placeholder":"Enter Primary Language of the Parent/Guardian"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "descrip":{
+    "type":"none",
+    "options":[],
+    "fieldName":"What are the major concern you have with your child",
+    "placeholder":"What are the major concern you have with your child"
+  , "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  }
+,"childDevDelay":{
+  "type":"multi-select",
+  "options":["<option value='Developmental delays'>Developmental delays</option>","<option value='Speech or language problems'>Speech or language problems</option>","<option value='Motor problems (gross or fine motor)'>Motor problems (gross or fine motor)</option>","<option value='Poor eye contact or little eye contact/walks on toes/flaps hands when excited'>Poor eye contact or little eye contact/walks on toes/flaps hands when excited</option>","<option value='Not able to play with other children'>Not able to play with other children</option>","<option value='Learning/Academic difficulties (reading, writing or math)'>Learning/Academic difficulties (reading, writing or math)</option>","<option value='Complaints from school'>Complaints from school</option>","<option value='Hyperactivity or difficulty finishing work'>Hyperactivity or difficulty finishing work</option>","<option value='Easily gets angry or temper tantrums'>Easily gets angry or temper tantrums</option>","<option value='Parenting challenges'>Parenting challenges</option>"],
+  "fieldName":"Does your child has any?",
+  "placeholder":"Does your child has any?"
+, "required":true
+,"visible":true,
+  "size":"full","disabled":false
+  },
+  "doesChildGoToSchool":{
+  "type":"radio",
+  "options":["<label class='radio-inline'><input onclick type='radio' class='childgoestoschoolcls' name='doesChildGoToSchool' value='NO'>No</label>",
+    "<label class='radio-inline'><input type='radio' class='childgoestoschoolcls' name='doesChildGoToSchool' value='YES'>Yes</label>"],
+  "fieldName":"Does You Child Go To School?",
+  "placeholder":"Does You Child Go To School?"
+, "required":false
+,"visible":true,
+  "size":"full","disabled":false
+},
+  "formalAssessment":{
+  "type":"radio",
+  "options":["<label class='radio-inline'><input onclick type='radio' class='showorhideother' name='formalAssessment' value='NO'>No</label>",
+    "<label class='radio-inline'><input type='radio' class='showorhideother' name='formalAssessment' value='NA'>Yes <customfield id='formalAssessment_field'></customfield></label>"],
+    "customOptions":["<option value=''>--- Select ---</option>","<option value='Developmental delays'>Developmental delays</option>","<option value='Autism Spectrum Disorder'>Autism Spectrum Disorder</option>","<option value='Learning Disabilities'>Learning Disabilities</option>","<option value='ADHD'>ADHD</option>","<option value='Cerebral Palsy'>Cerebral Palsy</option>","<option value='Any syndrome (e.g Down Syndrome)'>Any syndrome (e.g Down Syndrome)</option>","<option value='Others'>Others</option>"],
+    "fieldName":"Any formal assessment done so far?",
+  "placeholder":"Any formal assessment done so far?"
+, "required":false
+,"visible":true,
+  "size":"full","disabled":false
+}
+  ,"ongoingTherapy":{
+  "type":"radio",
+  "options":["<label class='radio-inline'><input onclick type='radio' class='showorhideother' name='ongoingTherapy' value='NO'>No</label>",
+    "<label class='radio-inline'><input type='radio' class='showorhideother' name='ongoingTherapy' value='NA'>Yes <customfield id='ongoingTherapy_field'></customfield></label>"],
+  "customOptions":["<option value=''>--- Select ---</option>","<option value='Occupational therapy'>Occupational therapy</option>","<option value='Speech and language therapy'>Speech and language therapy</option>","<option value='Special Education'>Special Education</option>","<option value='Other'>Other</option>"],
+  "fieldName":"Has your child received any therapies before?",
+  "placeholder":"Has your child received any therapies before?"
+, "required":false
+,"visible":true,
+  "size":"full","disabled":false
+},
+  "typeTherapy":{
+  "type":"select",
+  "options":["<option value=''>--- Select ---</option>","<option value='Parent Guidance'>Parent Guidance</option>","<option value='One on one therapy (E Learning)'>One on one therapy (E Learning)</option>","<option value='Home program with resources'>Home program with resources</option>","<option value='Counseling (Mind Belief)'>Counseling (Mind Belief)</option>"],
+  "fieldName":"What kind of therapies you would prefer?",
+  "placeholder":"What kind of therapies you would prefer?"
+, "required":false
+,"visible":true,
+  "size":"full","disabled":false
+},
+  "supportOption":{
+  "type":"none",
+  "options":["<option value=''>--- Select ---</option>","<option value='Home Management Skill (Home Program)'>Home Management Skill (Home Program)</option>","<option value='Parental counselling (Mind Belief)'>Parental counselling (Mind Belief)</option>","<option value='Childs regular sessions to develop skills (E-Learning)'>Child's regular sessions to develop skills (E-Learning)</option>"],
+  "fieldName":"We can support you in different ways. You suggest where you want to start with",
+  "placeholder":"Support Option"
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+},
+
+  "learningConcern":{
+    "type":"select",
+    "options":["<option value=''>--- Select ---</option>","<option value='Yes'>Yes</option>","<option value='No'>No</option>","<option value='NA'>NA</option>"],
+    "fieldName":"Does You Child Have Any Academic or Learning Concerns",
+    "placeholder":"Select Any Academic or Learning Concerns"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+  "difficultyInFriendship":{
+    "type":"select",
+    "options":["<option value=''>--- Select ---</option>","<option value='Yes'>Yes</option>","<option value='No'>No</option>","<option value='NA'>NA</option>"],
+    "fieldName":"Does Your Child Have Difficulty in Maintaining Friendships?",
+    "placeholder":""
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "payment":{
+    "type":"number",
+    "options":[],
+    "fieldName":"Payment(if no payment is done, kindly write 0)",
+    "placeholder":"Enter Paid Amount"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "clinicalCallTime":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Preferred Clinical Call Time",
+    "placeholder":"Select Preferred Clinical Call Time"
+  , "required":true
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "preferredCallingTime":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Preferred Calling Time",
+    "placeholder":"This value is to be fetched via API"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "preferredCallingSlot":{
+    "type":"select",
+    "options":["<option value=''>--- Select ---</option>","<option value='Morning'>Morning</option>","<option value='Afternoon'>Afternoon</option>","<option value='Evening'>Evening</option>"],
+    "fieldName":"Preferred Calling Slot",
+    "placeholder":""
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "pgBdName":{
+    "type":"select",
+    "options":[],
+    "fieldName":"PG/BD Name/Enabler",
+    "placeholder":""
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "professionFilled":{
+    "type":"select",
+    "options":[],
+    "fieldName":"Enabler",
+    "placeholder":""
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "childPlayPattern":{
+    "type":"select",
+    "options":[],
+    "fieldName":"BPO",
+    "placeholder":""
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+
+  "pgBdManager":{
+    "type":"select",
+    "options":[],
+    "fieldName":"PG/BD Manager",
+    "placeholder":""
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "leadDate":{
+    "type":"date",
+    "options":[],
+    "fieldName":"Actual Date Of Lead Creation",
+    "placeholder":"Actual Date Of Lead Creation"
+  , "required":true
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+  "leadSource":{
+    "type":"select",
+    "options":[],
+    "fieldName":"LeadSource",
+    "placeholder":"LeadSource"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  }
+,
+  "clientType":{
+    "type":"select",
+    "options":[],
+    "fieldName":"Lead Type",
+    "placeholder":"Lead Type"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  },
+
+
+  "interestedProduct":{
+    "type":"select",
+    "options":[],
+    "fieldName":"Program",
+    "placeholder":"Program"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  }
+,"familyStructure":{
+  "type":"none",
+  "options":[],
+  "fieldName":"Child’s Family structure ",
+  "placeholder":"Child’s Family structure "
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+,"socialHomeOut":{
+  "type":"none",
+  "options":[],
+  "fieldName":"How social is the child at home/ Outside",
+  "placeholder":"How social is the child at home/ Outside"
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+,"languageTherapist":{
+  "type":"none",
+  "options":[],
+  "fieldName":"Preferred language of therapist",
+  "placeholder":"Preferred language of therapist"
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+,"seekingSupport":{
+  "type":"none",
+  "options":[],
+  "fieldName":"Who are you seeking support for ?",
+  "placeholder":"Who are you seeking support for ? "
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+,"supportFor":{
+  "type":"none",
+  "options":[],
+  "fieldName":"What kind of support are you looking for?",
+  "placeholder":"What kind of support are you looking for? "
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+,"interventionAreas":{
+  "type":"none",
+  "options":[],
+  "fieldName":"Areas you need intervention with -",
+  "placeholder":"Areas you need intervention with - "
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+,"developmentTime":{
+  "type":"none",
+  "options":[],
+  "fieldName":"How much time can you devote towards learning how to support your child’s developmental needs: ",
+  "placeholder":"How much time can you devote towards learning how to support your child’s developmental needs: "
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+,"seizureHistory":{
+  "type":"none",
+  "options":[],
+  "fieldName":"Seizure History",
+  "placeholder":"Seizure History"
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+,"callReqCstTeam":{
+  "type":"none",
+  "options":[],
+  "fieldName":"Clinical Call Required from CST Team",
+  "placeholder":"Clinical Call Required from CST Team"
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+
+,"personAssigned":{
+  "type":"none",
+  "options":[],
+  "fieldName":"Clinical Person Assigned",
+  "placeholder":"Clinical Person Assigned"
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+,"assignmentDate":{
+  "type":"none",
+  "options":[],
+  "fieldName":"Assignment Date",
+  "placeholder":"Assignment Date"
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+},
+  "reviewResult":{
+    "type":"none",
+    "options":[],
+    "fieldName":"Clinical Team Review Result",
+    "placeholder":"Clinical Team Review Result"
+  , "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  }
+
+,"approved":{
+  "type":"none",
+  "options":["<option value='yes'>Yes</option>","<option value='no'>No</option>"],
+  "fieldName":"Approved",
+  "placeholder":"Approved"
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+
+,"callComments":{
+  "type":"none",
+  "options":[],
+  "fieldName":"Clinical Call comments",
+  "placeholder":"Clinical Call comments"
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+,"cpName":{
+  "type":"none",
+  "options":[],
+  "fieldName":"CP Name",
+  "placeholder":"CP Name"
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+}
+,"registeredInMb":{
+  "type":"none",
+  "options":[],
+  "fieldName":"Registered in MB OPS",
+  "placeholder":"Registered in MB OPS"
+, "required":false
+,"visible":false,
+  "size":"full","disabled":false
+},
+
+  "registrationDate":{
+    "type":"none",
+    "options":[],
+    "fieldName":"Registration Date",
+    "placeholder":"Registration Date"
+  , "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  },
+
+  "leadPriority":{
+    "type":"none",
+    "options":[],
+    "fieldName":"FaceBook Campaign Name",
+    "placeholder":"Campaign Name"
+  , "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  },
+
+  "adId":{
+    "type":"none",
+    "options":[],
+    "fieldName":"Facebook Ad Id",
+    "placeholder":"Ad Id"
+  , "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  },
+
+  "keyword":{
+    "type":"none",
+    "options":[],
+    "fieldName":"Campaign Keyword",
+    "placeholder":"Campaign Keyword"
+  , "required":false
+  ,"visible":false,
+    "size":"full","disabled":false
+  },
+
+  "pageName":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Page Name",
+    "placeholder":"Page Name"
+  , "required":false
+  ,"visible":true,
+    "size":"full","disabled":false
+  }
+,
+  "messenger":{
+    "type":"text",
+    "options":[],
+    "fieldName":"Messenger",
+    "placeholder":"Messenger"
+  , "required":false
+  ,"visible":true,
+    "size":"half","disabled":true
+  }
+,  "active":{
+  "type":"text",
+  "options":[],
+  "fieldName":"Active",
+  "placeholder":"Active"
+, "required":false
+,"visible":true,
+  "size":"half","disabled":true
+}
+
+}

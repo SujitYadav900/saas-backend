@@ -1,0 +1,55 @@
+<form id="dynamicfilterform">
+    <div class="col-md-12 form-group">
+        <label class="control-label">Ticket Status</label>
+        <div id="ticketstatusfilterdiv"></div>
+    </div>
+
+    <div class="col-md-12 form-group">
+        <label class="control-label">Ticket Priority</label>
+        <div id="ticketpriorityfilterdiv"></div>
+    </div>
+
+    <div class="col-md-12 form-group">
+        <label class="control-label">Ticket Type</label>
+        <select required class="form-control" id="ticketTypefilterform">
+
+        </select>
+    </div>
+
+
+    <div class="col-md-12 form-group">
+        <label class="control-label">User Filter</label>
+        <select  class="form-control" id="ticketuserfilterform">
+
+        </select>
+    </div>
+    <div class="col-md-12 form-check">
+
+        <label class="control-label">Date Filter Type</label>
+        <br>
+        <label class="radio-inline">
+            <input type="radio"  name="datefiltertype" value="createdate" checked="checked">Create Date</label>
+
+        <label class="radio-inline"><input  type="radio" name="datefiltertype" value="updatedate">Update Date</label>
+        <label class="radio-inline"><input  type="radio" name="datefiltertype" value="closedate">Close Date</label>
+    </div>
+    <div class="col-md-6 form-group">
+        <label class="control-label">Start Date</label>
+        <input type="date" class="form-control" id="ticketstartdatefilterform"/>
+
+
+    </div>
+    <div class="col-md-6 form-group">
+        <label class="control-label">End Date</label>
+        <input type="date" class="form-control" id="ticketendfilterform"/>
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Search</label>
+        <input type="text" placeholder="Enter Text To Search" class="form-control" id="ticketfilterformsearch">
+    </div>
+    <div class="reset-button">
+        <button id="createbtnfilterform" type="submit" class="btn btn-success">Search <i class="hvr-buzz-out fa fa-search"></i></button>
+        <button id="cancelbtnfilterform" data-dismiss="modal" type="button" class="btn btn-warning">Close</button>
+
+    </div>
+</form>

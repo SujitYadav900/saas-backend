@@ -1,0 +1,100 @@
+<form id="dynamicfilterform" xmlns="http://www.w3.org/1999/html">
+    <div class="col-md-12 form-group">
+        <label class="control-label">Lead Source</label>
+        <select class="form-control" id="leadsourcefilterform">
+            <option value="0">----All----</option>
+        </select>
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Lead Source Inner</label>
+        <select class="form-control" id="leadsourceinnerfilterform">
+            <option value="0">----All----</option>
+            <option value="Api">Api</option>
+            <option value="Api">Application</option>
+            <option value="Bulk Upload">Bulk Upload</option>
+        </select>
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Lead Stage</label>
+        <select class="form-control" id="leadstagefilterform">
+            <option value="0">----All----</option>
+        </select>
+    </div>
+
+    <div class="col-md-12 form-group">
+        <label class="control-label">Lead Status</label>
+        <select class="form-control" id="leadstatusfilterform">
+            <option value="0">----All----</option>
+        </select>
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Product</label>
+        <select class="form-control" id="leadproductfilterform">
+            <option value="0">----All----</option>
+        </select>
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Lead type</label>
+        <select class="form-control" id="leadtypefilterform">
+            <option value="0">----All----</option>
+        </select>
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">User Filter</label>
+        <select class="form-control" id="leaduserfilterform">
+            <option value="0">----All----</option>
+        </select>
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Facebook Campaign</label>
+        <select class="form-control" id="leadpriorityfilterform">
+            <option value="0">----All----</option>
+        </select>
+    </div>
+
+    <div class="col-md-12 form-check">
+
+        <label class="control-label">Date Filter Type</label>
+        <br>
+        <label class="radio-inline"><input type="radio"  name="datefiltertype" value="createdate" checked="checked">Create Date</label>
+        <label class="radio-inline"><input  type="radio" name="datefiltertype" value="updatedate">Update Date</label>
+        <label class="radio-inline"><input  type="radio" name="datefiltertype" value="convertdate">Convert Date</label>
+        <label class="radio-inline"><input  type="radio" name="datefiltertype" value="assessmentdate">Assessment Date</label>
+    </div>
+    <br>
+
+    <div class="col-md-6 form-group">
+        <label class="control-label">Start Date</label>
+        <input type="date" class="form-control" id="leadstartdatefilterform"/>
+
+
+    </div>
+    <div class="col-md-6 form-group">
+        <label class="control-label">End Date</label>
+        <input type="date" class="form-control" id="leadendfilterform"/>
+    </div>
+
+
+
+<div class="col-md-12 form-group">
+    <div>
+        <label class="control-label">Search</label>
+        <input type="text" onkeyup="showCheckBoxes()" placeholder="Enter Text To Search" class="form-control" id="leadsearchfilterform">
+    </div>
+
+    <br>
+    <div id="fieldCheckboxDiv" class="form-group" hidden>
+        <label class="control-label">Select Fields to Search</label>
+        <div id="checkboxDiv">
+
+        </div>
+    </div>
+</div>
+
+
+    <div class="reset-button">
+        <button id="createbtnfilterform" type="submit" class="btn btn-success">Search <i class="hvr-buzz-out fa fa-search"></i></button>
+        <button id="cancelbtnfilterform" data-dismiss="modal" type="button" class="btn btn-warning">Close</button>
+
+    </div>
+</form>

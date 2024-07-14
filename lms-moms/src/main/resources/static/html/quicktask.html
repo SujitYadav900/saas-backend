@@ -1,0 +1,41 @@
+
+<form class="form-horizontal" id="quicktaskform">
+    <input type="hidden" id="taskformjsonhidden">
+    <input type="hidden" id="taskformurl">
+    <input type="hidden" id="taskformid">
+    <div class="col-md-12 form-group">
+        <label class="control-label">Subject</label>
+
+        <select id="subjecttaskform" class="form-control">
+
+
+        </select>
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Message</label>
+        <textarea value=""   placeholder="Enter Message"  id="messagetaskform" class="form-control"  required></textarea>
+
+    </div>
+
+    <div class="col-md-12 form-group">
+        <label class="control-label">Datetime</label>
+        <input type="text" autocomplete="off"  class="form-control" id="datetimetaskform" required >
+
+
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Text Message Notification</label>
+        <div class="i-check">
+            <input type="checkbox" id="txtmessagenotificatontaskform" checked>
+
+        </div>
+
+    </div>
+    <div class="reset-button">
+        <button id="createbtntaskform" type="submit" class="btn btn-success">Create</button>
+        <button id="cancelbtntaskform" data-dismiss="modal" type="button" class="btn btn-warning">Cancel</button>
+
+    </div>
+
+
+</form>

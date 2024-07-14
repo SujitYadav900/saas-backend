@@ -1,0 +1,25 @@
+<form class="form-horizontal" id="leadtransferform">
+
+    <div class="col-md-12 form-group">
+        <label class="control-label">User</label>
+        <select required class="form-control" id="usertransferform">
+
+        </select>
+    </div>
+
+<!--    THIS TO BE USED ONLY WITH BULK TRANSFER, ONLY DISPLAYS WHEN BULK TRANSFERRING-->
+    <div class="col-md-12 form-group" id="clientTypeSelectDiv" style="display: none">
+        <label class="control-label">Lead Type</label>
+        <select class="form-control" id="clientTypeSelect">
+
+        </select>
+    </div>
+
+    <input type="hidden" id="urlhiddentransferform">
+    <input type="hidden" id="jsonhiddenttransferform">
+    <div class="reset-button">
+        <button id="createbtntranferform" type="submit" class="btn btn-success">Transfer</button>
+        <button id="cancelbtntranferform" data-dismiss="modal" type="button" class="btn btn-warning">Cancel</button>
+
+    </div>
+</form>

@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="panel panel-bd lobidragdashboard customsidedivmenu">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <h3>Tasks </h3>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <label>Select User</label>
+                    <select class="form-control"  id="userDetailsDashboard" required>
+
+                        <option value="Own">Own</option>
+                        <option value="Team">Team</option>
+                    </select>
+                    <br>
+                    <div>
+                        <button id="searchBtnDashboard" type="button" class="btn btn-success">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div style="" class="panel-body" id="taskview">
+                <div class="table-responsive">
+                    <table id="table" class="table table-bordered table-striped table-hover"
+                           width="100%">
+                        <thead>
+                        <tr class="info">
+                            <th>Task ID</th>
+                            <th>Create Date</th>
+                            <th>Username</th>
+                            <th>Client Name</th>
+                            <th>Client Phone</th>
+                            <th>Task Time</th>
+                            <th>Subject</th>
+                            <th>Message</th>
+                            <th>Link</th>
+
+                        </tr>
+                        </thead>
+                        <tbody id="tabletbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

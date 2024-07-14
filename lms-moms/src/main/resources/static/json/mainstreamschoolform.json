@@ -1,0 +1,629 @@
+{
+  "main_Listening1": {
+    "fieldName":"Asks for statements or sentences to be repeated",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainlistening"
+  },
+  "main_Listening2":{
+    "fieldName":"Often says \"what?\" 'Huh\" etc",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainlistening"
+  },
+  "main_Listening3":{
+    "fieldName":"Fails to follow directions given verbally",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainlistening"
+  },
+  "main_Listening4":{
+    "fieldName":"Has difficulty understanding common vocabulary words",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainlistening"
+  },
+  "main_Listening5":{
+    "fieldName":"Has difficuty listening attentively to stories, tv shows and or music",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainlistening"
+  },
+  "main_Listening6":{
+    "fieldName":"Has difficulty remembering multiple commands",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainlistening"
+  },
+  "main_Listening7":{
+    "fieldName":"Repeats phrases to self over and over before understanding takes place",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainlistening"
+  },
+  "main_Listening8":{
+    "fieldName":"Answers questions inappropriately",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainlistening"
+  },
+  "main_Listening9":{
+    "fieldName":"Asks irrelevant questions after hearing a story",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainlistening"
+  },
+  "main_Listening10":{
+  "fieldName":"Confuses time concepts (before/after) and confuses direction words (front/back)",
+  "required":true,
+  "visible":true,
+  "disabled":false,
+  "block":"mainlistening"
+},
+  "main_Listening11":{
+    "fieldName":"Has difficulty understanding nonliteral or abstract language like metaphors",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainlistening"
+  },
+
+
+
+  "main_Oral_Expression_Speaking1":{
+    "fieldName":"Speaks in single word statements only",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+  "main_Oral_Expression_Speaking2":{
+    "fieldName":"Speaks in small phrases only",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+  "main_Oral_Expression_Speaking3":{
+    "fieldName":"Has difficulty speaking spontaneously",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+  "main_Oral_Expression_Speaking4":{
+    "fieldName":"Has slow or labored speech",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+  "main_Oral_Expression_Speaking5":{
+    "fieldName":"Has mis articulation in speech",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+  "main_Oral_Expression_Speaking6":{
+    "fieldName":"Cannot repeat long sentences",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+  "main_Oral_Expression_Speaking7":{
+    "fieldName":"Has difficulty retrieving words ",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+  "main_Oral_Expression_Speaking8":{
+    "fieldName":"Is slow in retieving words",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+  "main_Oral_Expression_Speaking9":{
+    "fieldName":"Uses immature or bizzare patterns of language or uses immature grammer when speaking",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+  "main_Oral_Expression_Speaking10":{
+    "fieldName":"Has difficulty relating ideas in sequence like telling stories in sequence",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+  "main_Oral_Expression_Speaking11":{
+    "fieldName":"Contributes to class discussions with off task comments",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+  "main_Oral_Expression_Speaking12":{
+    "fieldName":"Requires much time to respond verbally",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainloralexpression"
+  },
+
+
+
+
+  "main_Basic_Reading1":{
+    "fieldName":"Avoids reading ",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading2":{
+    "fieldName":"Behavior changes when asked to read silently or orally",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading3":{
+    "fieldName":"Has poor memory of letter and words",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading4":{
+    "fieldName":"Has difficulty matching letters",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading5":{
+    "fieldName":"Is not consistent with letter sounds and blending skills",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading6":{
+    "fieldName":"Guesses words from initial letters",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading7":{
+    "fieldName":"Guesses words from pictorial cues",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading8":{
+    "fieldName":"Has difficulty sounding out words correctly",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading9":{
+    "fieldName":"Has difficulty with sight vocablary",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading10":{
+    "fieldName":"Skips lines while reading",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading11":{
+    "fieldName":"Uses finger to anchor self when reading",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading12":{
+    "fieldName":"Reads high frequency sight words incorrectly like the, and, but etc",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+  "main_Basic_Reading13":{
+    "fieldName":"Does not observe punctuation while reading",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbasicreading"
+  },
+
+
+  "main_Reading_Comprehension1":{
+    "fieldName":"Has difficulty reading and following directions",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainreadingcomprehension"
+  },
+  "main_Reading_Comprehension2":{
+    "fieldName":"Has difficulty answering questions after reading",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainreadingcomprehension"
+  },
+  "main_Reading_Comprehension3":{
+    "fieldName":"Has difficulty in doing math word problems",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainreadingcomprehension"
+  },
+  "main_Reading_Comprehension4":{
+    "fieldName":"Has difficulty understanding main idea of a passage",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainreadingcomprehension"
+  },
+  "main_Reading_Comprehension5":{
+    "fieldName":"Has difficulty using content cues to guess at unkown word",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainreadingcomprehension"
+  },
+  "main_Reading_Comprehension6":{
+    "fieldName":"Has difficulty reading independently",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainreadingcomprehension"
+  },
+  "main_Reading_Comprehension7":{
+    "fieldName":"Cannot retell what has been read",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainreadingcomprehension"
+  },
+
+
+  "main_Math_Calculations1":{
+    "fieldName":"Confuses operational signs",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathcalculations"
+  },
+  "main_Math_Calculations2":{
+    "fieldName":"Uses fingers for computation",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathcalculations"
+  },
+  "main_Math_Calculations3":{
+    "fieldName":"Reverses numbers",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathcalculations"
+  },
+  "main_Math_Calculations4":{
+    "fieldName":"Has difficulty with place values",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathcalculations"
+  },
+  "main_Math_Calculations5":{
+    "fieldName":"Has difficulty with keeping colums straight",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathcalculations"
+  },
+  "main_Math_Calculations6":{
+    "fieldName":"Has difficulty doing single digit operations (addition, subtraciton, multipication or division)",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathcalculations"
+  },
+  "main_Math_Calculations7":{
+    "fieldName":"Has difficulty doing multi digit operations (addition, subtraciton, multipication or division)",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathcalculations"
+  },
+  "main_Math_Calculations8":{
+    "fieldName":"Has difficulty completing sums that requires more than one operation",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathcalculations"
+  },
+  "main_Math_Calculations9":{
+    "fieldName":"Has difficulty estimating answers",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathcalculations"
+  },
+  "main_Math_Calculations10":{
+    "fieldName":"Completes problem in mind but unable to put on paer and in writing steps",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathcalculations"
+  },
+
+
+
+
+  "main_Math_Reasoning1":{
+    "fieldName":"Has difficulty applying math operations to real life problems",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathreasoning"
+  },
+  "main_Math_Reasoning2":{
+    "fieldName":"Has difficulty telling time",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathreasoning"
+  },
+  "main_Math_Reasoning3":{
+    "fieldName":"Has difficulty using calendar correctly",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathreasoning"
+  },
+  "main_Math_Reasoning4":{
+    "fieldName":"Guesses answers instead of trying to solve problems",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathreasoning"
+  },
+  "main_Math_Reasoning5":{
+    "fieldName":"Has difficulty solving problems involving a sequence of steps",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathreasoning"
+  },
+  "main_Math_Reasoning6":{
+    "fieldName":"Has difficulty organizing a task to facilitate tis completion",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathreasoning"
+  },
+  "main_Math_Reasoning7":{
+    "fieldName":"Has difficulty with word probems",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainmathreasoning"
+  },
+
+  "main_Written_Expression1":{
+    "fieldName":"Has difficulty holding pencil in correct allingnment to paper",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+  "main_Written_Expression2":{
+    "fieldName":"Writes slowly or awkwardly",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+  "main_Written_Expression3":{
+    "fieldName":"Reverses letters like b and d ",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+  "main_Written_Expression4":{
+    "fieldName":"Uses extra effort to write ",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+  "main_Written_Expression5":{
+    "fieldName":"Misspells words phonetically",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+  "main_Written_Expression6":{
+    "fieldName":"Misspells high frequnecy sight words",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+  "main_Written_Expression7":{
+    "fieldName":"Fails to retain spelling words studied in word lists or spelling lists",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+  "main_Written_Expression8":{
+    "fieldName":"Has difficulty expresing a complete thought in  sentence",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+  "main_Written_Expression9":{
+    "fieldName":"Has difficulty expressing a complete thought in a paragraph",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+  "main_Written_Expression10":{
+    "fieldName":"Has difficulty producing written work which is legible, properly spaced, capitalized and punctuated",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+  "main_Written_Expression11":{
+    "fieldName":"Mixes manuscript and cursive forms",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+  "main_Written_Expression12":{
+    "fieldName":"Has difficulty sequencing thoughts in a narrative",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainwrittenexpression"
+  },
+
+
+  "main_Behavior1":{
+    "fieldName":"Listens to teacher/classmate and follows directions",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior2":{
+    "fieldName":"Makes excessive demand on teacher time",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior3":{
+    "fieldName":"Overactive/restless/fidgety",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior4":{
+    "fieldName":"Impulsive ",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior5":{
+    "fieldName":"Disturbs others in class ",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior6":{
+    "fieldName":"Has diffiuclty maintaining peer relations or has poor peer interactions",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior7":{
+    "fieldName":"Out of seat",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior8":{
+    "fieldName":"Off task behaviors",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior9":{
+    "fieldName":"Distractible",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior10":{
+    "fieldName":"Talkative or makes inappropriate noises ",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior11":{
+    "fieldName":"Blurts out answers without thinking",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior12":{
+    "fieldName":"Has trouble keeping hands and feet to self or makes repetetive motor movements",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior13":{
+    "fieldName":"Destructive/Aggressive (kicks others, hits others, throws things etc)",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior14":{
+    "fieldName":"Isolate self from others",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  },
+  "main_Behavior15":{
+    "fieldName":"Indulges in self injurious behaviors",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"mainbehavior"
+  }
+}

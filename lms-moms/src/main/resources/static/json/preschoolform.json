@@ -1,0 +1,522 @@
+{
+  "pre_Gross_Motor_Skills1":{
+    "fieldName":"Can walk independently with good balance",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"pregrossmotorskills"
+  },
+  "pre_Gross_Motor_Skills2":{
+    "fieldName":"Can kick a ball forward without falling",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"pregrossmotorskills"
+  },
+  "pre_Gross_Motor_Skills3":{
+    "fieldName":"Can walk up and down stairs without assistance",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"pregrossmotorskills"
+  },
+  "pre_Gross_Motor_Skills4":{
+    "fieldName":"Can hop forward on one foot without support",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"pregrossmotorskills"
+  },
+  "pre_Gross_Motor_Skills5":{
+    "fieldName":"Can throw a ball and hit a target with a dominant hand",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"pregrossmotorskills"
+  },
+  "pre_Gross_Motor_Skills6":{
+    "fieldName":"Can jump rope without assistance",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"pregrossmotorskills"
+  },
+
+
+
+
+  "pre_Fine_motor_Skills1":{
+    "fieldName":"Can remove forms from a form board or inset puzzle like shapes or animals etc",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prefinemotorskills"
+  },
+  "pre_Fine_motor_Skills2":{
+    "fieldName":"Can scribble linear and/or circular patterns spontaneously.",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prefinemotorskills"
+  },
+  "pre_Fine_motor_Skills3":{
+    "fieldName":"Can use pads of fingertips to grasp pencil or tripod grip.",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prefinemotorskills"
+  },
+  "pre_Fine_motor_Skills4":{
+    "fieldName":"Can string 4 large beads.",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prefinemotorskills"
+  },
+  "pre_Fine_motor_Skills5":{
+    "fieldName":"Can hold paper with one hand while drawing or writing with other hand.",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prefinemotorskills"
+  },
+  "pre_Fine_motor_Skills6":{
+    "fieldName":"Can draw a person with 4 or more parts",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prefinemotorskills"
+  },
+  "pre_Fine_motor_Skills7":{
+    "fieldName":"Can cut with scissors, following a line.",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prefinemotorskills"
+  },
+  "pre_Fine_motor_Skills8":{
+    "fieldName":"Can imitate vertical and horizontal markings",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prefinemotorskills"
+  },
+  "pre_Fine_motor_Skills9":{
+    "fieldName":"Can copy a circle",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prefinemotorskills"
+  },
+  "pre_Fine_motor_Skills10":{
+    "fieldName":"Can copy the letters",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prefinemotorskills"
+  },
+
+
+
+  "pre_Self_help1":{
+    "fieldName":"Can use spoon or fork for eating solid food",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"preselfhelp"
+  },
+  "pre_Self_help2":{
+    "fieldName":"Can drink from a cup without assistance (little SPILLING is okay)",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"preselfhelp"
+  },
+  "pre_Self_help3":{
+    "fieldName":"Can undo atleast two of these - large buttons, snaps, shoes laces, zipper,velcro etc",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"preselfhelp"
+  },
+  "pre_Self_help4":{
+    "fieldName":"Can pull pants/underpants down ",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"preselfhelp"
+  },
+  "pre_Self_help5":{
+    "fieldName":"Can put on shoes (even if he or she put on the wrong foot)",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"preselfhelp"
+  },
+  "pre_Self_help6":{
+    "fieldName":"Can express need to use the toilet",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"preselfhelp"
+  },
+  "pre_Self_help7":{
+    "fieldName":"Can control his or her bowel movements",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"preselfhelp"
+  },
+  "pre_Self_help8":{
+    "fieldName":"Can washes hands independently",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"preselfhelp"
+  },
+  "pre_Self_help9":{
+    "fieldName":"Can take care of toileting needs (i.e undressing, cleaning, and dressing)",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"preselfhelp"
+  },
+  "pre_Self_help10":{
+    "fieldName":"Can manipulates large buttons, velcro, zippers independently",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"preselfhelp"
+  },
+
+
+
+
+  "pre_Social_Emotional1":{
+    "fieldName":"Can identify self as boy or a girl",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"presocialemotional"
+  },
+  "pre_Social_Emotional2":{
+    "fieldName":"Can greet familiar adults spontaneously",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"presocialemotional"
+  },
+  "pre_Social_Emotional3":{
+    "fieldName":"Can imitate or help in simple house hold tasks",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"presocialemotional"
+  },
+  "pre_Social_Emotional4":{
+    "fieldName":"Can participate in group activities",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"presocialemotional"
+  },
+  "pre_Social_Emotional5":{
+    "fieldName":"Can name his or her friends",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"presocialemotional"
+  },
+  "pre_Social_Emotional6":{
+    "fieldName":"Can understand rules of simple games when playing with adults or peers",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"presocialemotional"
+  },
+  "pre_Social_Emotional7":{
+    "fieldName":"Can waits for his turn for adults or teachers attention",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"presocialemotional"
+  },
+  "pre_Social_Emotional8":{
+    "fieldName":"Can describe his or her feelings i.e says I am sad or happy or mad",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"presocialemotional"
+  },
+  "pre_Social_Emotional9":{
+    "fieldName":"Can recognize the feelings of others",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"presocialemotional"
+  },
+  "pre_Social_Emotional10":{
+    "fieldName":"Can show responsibility and admits errors or wrong doing i.e says sorry when made a mistake",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"presocialemotional"
+  },
+
+
+
+
+
+  "pre_Cognitive1":{
+    "fieldName":"Can point to atleast twenty things or pictures when they are named.",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precognitive"
+  },
+  "pre_Cognitive2":{
+    "fieldName":"Can show interest and enjoyment in age appropriate books and printed material?",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precognitive"
+  },
+  "pre_Cognitive3":{
+    "fieldName":"Can match colors or point correctly to atleast two colors.",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precognitive"
+  },
+  "pre_Cognitive4":{
+    "fieldName":"Can say size words like large/big or little/small correctly?",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precognitive"
+  },
+  "pre_Cognitive5":{
+    "fieldName":"Can dress up and play/act pretending to be someone else?",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precognitive"
+  },
+  "pre_Cognitive6":{
+    "fieldName":"Can name five different colors?",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precognitive"
+  },
+  "pre_Cognitive7":{
+    "fieldName":"Can know the difference between living and nonliving things.",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precognitive"
+  },
+  "pre_Cognitive8":{
+    "fieldName":"Can attend to a learning task /story in a small group for 5 minutes.",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precognitive"
+  },
+  "pre_Cognitive9":{
+    "fieldName":"Can follow two or more step directions or instructions ",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precognitive"
+  },
+  "pre_Cognitive10":{
+    "fieldName":"Can answer simple logical questions like ' What do we eat'?",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precognitive"
+  },
+  "pre_Cognitive11":{
+    "fieldName":"Can say alphabets or letter names by rote?",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precognitive"
+  },
+
+
+
+
+  "pre_Communication1":{
+    "fieldName":"Can identify his or her own body parts like nose, eyes, ears",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication2":{
+    "fieldName":"Can look at or point to objects across the room when it is named",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication3":{
+    "fieldName":"Can use 10 or more words",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication4":{
+    "fieldName":"Can say two or three words sentences.",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication5":{
+    "fieldName":"Can correctly use words like me, I, Mine or You",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication6":{
+    "fieldName":"Can respond to who or what questions e.g 'who gives us milk' or 'what do you do with a pen'",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication7":{
+    "fieldName":"Can tell his or her first and last name",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication8":{
+    "fieldName":"Can use pronouns like I, you and me",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication9":{
+    "fieldName":"Can respond with yes or no appropriately",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication10":{
+    "fieldName":"Can ask questions that begin with who and where",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication11":{
+    "fieldName":"Can answer WH questions - what, who, when, where, why, and how",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication12":{
+    "fieldName":"Can use 5-6 words sentences",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication13":{
+    "fieldName":"Can recall events from a story presented orally ",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication14":{
+    "fieldName":"Can communicate his or her experiences clearly enough for other to understand",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication15":{
+    "fieldName":"Can recognize a printing of his or her first and last names",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication16":{
+    "fieldName":"Can read a simple story aloud so that someone who is only listening can follow the story",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication17":{
+    "fieldName":"Can engage in a meaningful conversations with adults or peers",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+  "pre_Communication18":{
+    "fieldName":"Can describe what is happening in a picture",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"precommunication"
+  },
+
+
+
+  "pre_Behaviors1":{
+    "fieldName":"Inappropriate movements like fidgeting, walking and running excessively",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prebehaviors"
+  },
+  "pre_Behaviors2":{
+    "fieldName":"Inappropriate vocalizations like talking out, excessive crying or teasing or jargon speech",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prebehaviors"
+  },
+  "pre_Behaviors3":{
+    "fieldName":"Repetive body movements like rocking, toe walking, spinning etc",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prebehaviors"
+  },
+  "pre_Behaviors4":{
+    "fieldName":"Poor peer interactions",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prebehaviors"
+  },
+  "pre_Behaviors5":{
+    "fieldName":"Self absorbed or does not relate to other adults or children",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prebehaviors"
+  },
+  "pre_Behaviors6":{
+    "fieldName":"Difficulty transitioning from one activity to another",
+    "required":true,
+    "visible":true,
+    "disabled":false,
+    "block":"prebehaviors"
+  }
+}

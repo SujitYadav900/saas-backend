@@ -1,0 +1,55 @@
+<form class="form-horizontal" id="leadbulkuploadform">
+<input type="hidden" id="leadfilebulkuploadurl">
+    <div class="col-md-12 form-group">
+        <label class="control-label">Assign Lead By</label>
+    </div>
+    <div class="col-md-12 form-group">
+
+
+        <label class="checkbox-inline">
+            <input onclick="showuser(true)" type="radio" value="User" checked="" name="radioassignby">User
+        </label>
+        <label class="checkbox-inline">
+            <input onclick="showuser(false)" type="radio" value="Source" name="radioassignby">Source
+        </label>
+        <label class="checkbox-inline">
+            <input onclick="showuser(false)" type="radio" value="Type"  name="radioassignby">Type
+        </label>
+        <label class="checkbox-inline">
+            <input onclick="showuser(false)" type="radio"  value="Product"  name="radioassignby">Product
+        </label>
+
+    </div>
+    <div id="userfilterdivform" class="col-md-12 form-group">
+        <label class="control-label">User Filter</label>
+        <select class="form-control" id="leaduserbulktoform">
+
+        </select>
+    </div>
+
+
+    <div class="col-md-12 form-group">
+        <label class="control-label">Enter File<i id="downloadsamplefile" style="margin-left: 10px;
+    color: red;" title="Click Here To Download Sample File" class="hvr-buzz-out fa fa-question-circle"></i></label>
+       <input required type="file" class="form-control" id="leadbulkuploadfile" accept=".csv,.xlsx">
+    </div>
+    <div class="reset-button">
+        <button id="createbtnbulkuploadform" type="submit" class="btn btn-success">Upload</button>
+        <button id="cancelbtnbulkuploadform" data-dismiss="modal" type="button" class="btn btn-warning">Cancel</button>
+
+    </div>
+</form>
+
+<script>
+    function showuser(val)
+    {
+        if(val)
+        {
+            $('#userfilterdivform').css("display","block")
+        }
+        else{
+            $('#userfilterdivform').css("display","none")
+        }
+
+    }
+</script>

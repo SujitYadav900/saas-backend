@@ -1,0 +1,52 @@
+
+<form class="form-horizontal" id="quickticketform">
+    <input type="hidden" id="ticketformjsonhidden">
+    <input type="hidden" id="ticketformurl">
+    <input type="hidden" id="ticketformid">
+    <div class="col-md-12 form-group">
+        <label class="control-label">Subject</label>
+        <input type="text"  placeholder="Enter Subject"  id="subjectticketform" class="form-control" required>
+
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Ticket Type</label>
+      <select required class="form-control" id="ticketformtype"></select>
+
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Department</label>
+        <select required class="form-control" id="departmentform"></select>
+
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">User</label>
+        <select required class="form-control" id="userform"></select>
+
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Attachment</label>
+        <table class="table table-bordered table-striped table-hover"><thead>
+        <tr>
+            <th>Filename</th>   <th><i id="addnewrowticketing" class="fa fa-plus-circle"></i></th>
+        </tr></thead>
+        <tbody id="tbodyattachmentticket">
+
+        </tbody>
+        </table>
+
+    </div>
+    <div class="col-md-12 form-group">
+        <label class="control-label">Description</label>
+        <textarea required class="form-control" id="ticketmessageform"></textarea>
+    </div>
+
+
+
+    <div class="reset-button">
+        <button id="createbtntaskform" type="submit" class="btn btn-success">Create</button>
+        <button id="cancelbtntaskform" data-dismiss="modal" type="button" class="btn btn-warning">Cancel</button>
+
+    </div>
+
+
+</form>

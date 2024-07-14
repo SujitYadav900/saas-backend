@@ -68,7 +68,7 @@ public class RetriveDataGoogleSheetServiceImpl implements RetriveDataGoogleSheet
 	private final static JsonFactory JSON_FACTORY = GsonFactory.getDefaultInstance();
 	private final static String TOKENS_DIRECTORY_PATH = "tokens";
 	private final static List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS_READONLY);
-	final static String CREDENTIALS_FILE_PATH = "/credentials.json";
+	final static String CREDENTIALS_FILE_PATH = "";
 	//private static final String spreadsheetId = "12HOEkhdG5HMkkmSVFyflCpQKWg3QH2OBb58IUCTAZ1w";
 
 	@Override
